@@ -12,11 +12,10 @@
     body {
       margin: 3em;
       padding: 0;
-      background-color: #f4e8dc; /* soft beige to match the screenshot’s look */
+      background-color: #f4e8dc; /* soft beige */
       font-family: 'Open Sans', sans-serif;
       color: #333;
     }
-
     .container {
       max-width: 600px;
       padding: 2rem;
@@ -25,20 +24,17 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
     }
-
     h1 {
       font-family: 'Caveat', cursive;
       font-size: 3rem;
       margin-bottom: 1rem;
-      color: #FF6D00; /* a warm orange */
+      color: #FF6D00; /* warm orange */
     }
-
     .subtitle {
       font-size: 1rem;
       color: #777;
       margin-bottom: 2rem;
     }
-
     .coffee-btn {
       background-color: #FF6D00; /* Dutch orange tone */
       color: #fff;
@@ -48,17 +44,10 @@
       padding: 0.8rem 2rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      text-decoration: none; /* if using <a> inside it */
     }
-
     .coffee-btn:hover {
       background-color: #FF8000;
-    }
-
-    .donation-instructions {
-      margin-top: 2rem;
-      text-align: left;
-      line-height: 1.5;
-      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -66,10 +55,11 @@
 <div class="container">
   <h1>Do you like this extension?</h1>
   <p class="subtitle">Buy me a coffee! It keeps me going.</p>
-  <!-- Replace this link with your actual PayPal.me URL -->
-  <button class="coffee-btn" onclick="window.open('https://paypal.me/valentindmtr115', '_blank')">
-    ☕ Buy Me a Coffee
-  </button>
+  <!-- Button with an ID for external script event binding -->
+  <button id="coffeeBtn" class="coffee-btn">☕ Buy Me a Coffee</button>
 </div>
+
+<!-- Import an external script that will add the click handler -->
+<script src="scripts/popup.js"></script>
 </body>
 </html>
