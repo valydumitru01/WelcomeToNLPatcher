@@ -1,5 +1,5 @@
 # Job Search Quote Remover
-
+Chrome Extension Link: [Job Search Quote Remover](https://chromewebstore.google.com/detail/gfdcnenpmkdnhgbmfbnemebmcpoahpon?utm_source=item-share-cp)
 This Chrome extension removes unwanted quotation marks from the search query in an XHR request on the `jobportal.ent.europe-west4.gcp.elastic-cloud.com` site, ensuring the site’s boolean operators (`+ | - " *`) work properly.
 
 ## Motivation
