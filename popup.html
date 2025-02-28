@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Me a Coffee</title>
+  <!-- Include a Google Font to get a curvy, friendly style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4e8dc; /* soft beige to match the screenshot’s look */
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #FF6D00; /* a warm orange */
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 2rem;
+    }
+
+    .coffee-btn {
+      background-color: #FF6D00; /* Dutch orange tone */
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 9999px;
+      padding: 0.8rem 2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .coffee-btn:hover {
+      background-color: #FF8000;
+    }
+
+    .donation-instructions {
+      margin-top: 2rem;
+      text-align: left;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Do you like this extension?</h1>
+  <p class="subtitle">Buy me a coffee! It keeps me going.</p>
+  <!-- Replace this link with your actual PayPal.me URL -->
+  <button class="coffee-btn" onclick="window.open('https://paypal.me/valentindmtr115', '_blank')">
+    ☕ Buy Me a Coffee
+  </button>
+</div>
+</body>
+</html>
