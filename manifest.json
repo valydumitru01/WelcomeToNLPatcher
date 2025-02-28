@@ -1,0 +1,28 @@
+{
+  "name": "Search Patcher",
+  "description": "Welcome to NL search Patcher",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "permissions": [
+    "webRequest", "webNavigation"
+  ],
+  "host_permissions": [
+    "*://*.welcome-to-nl.nl/*"
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["*://*.welcome-to-nl.nl/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["scripts/injectedPatch.js"],
+      "matches": ["*://*.welcome-to-nl.nl/*"]
+    }
+  ]
+}
